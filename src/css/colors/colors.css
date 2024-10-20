@@ -1,0 +1,20 @@
+:root {
+  /*Color para texto y fondo en modo dark*/
+  --color-text-dark: #ffffffde;
+  --color-text-link: #ddd;
+  --color-background-navbarGlobal-dark: #161616;
+
+  /*Color para hover en el button de navbar global*/
+  --hover-color-button-dark: #575757;
+
+  /*Color button default*/
+  --hover-color-button-default: #313538;
+
+  /*Color button formulario */
+  --color-button-dark: #006fee;
+  --hover-color-button-dark: #0366d8;
+
+  /*Color inputs y textarea */
+  --border-color-input-dark: #3f3f46;
+  --border-hover-color-input-dark: #71717a;
+}

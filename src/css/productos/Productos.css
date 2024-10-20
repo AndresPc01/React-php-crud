@@ -1,0 +1,119 @@
+@import "../colors/colors.css";
+
+.section_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.section_groups {
+  display: grid;
+  grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
+  grid-template-rows: auto auto auto auto;
+  height: 60vh;
+  column-gap: 10px;
+  padding: 40px 50px 80px;
+  row-gap: 2px;
+  box-shadow: 0 2px 4px #ffffff1a, 0 8px 16px #ffffff1a;
+}
+.group_inputs,
+.group_codigo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.error_input {
+  border: 2px solid #f31260 !important;
+}
+.group_inputs span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #808088;
+}
+
+.Descripcion {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}
+.Descripcion textarea {
+  font-size: 1.1rem;
+  width: 100%;
+  height: 15vh;
+  resize: none; /*sirve para que no se redimensione el textarea*/
+  background-color: transparent;
+  border: 2px solid var(--border-color-input-dark);
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    border: 2px solid var(--border-hover-color-input-dark);
+  }
+}
+
+.group_inputs input {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: 2px solid var(--border-color-input-dark);
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  &:hover {
+    border: 2px solid var(--border-hover-color-input-dark);
+  }
+}
+
+.group_codigo input {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: 2px solid var(--border-color-input-dark);
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  &:hover {
+    border: 2px solid var(--border-hover-color-input-dark);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-frm {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+
+.btn-frm button {
+  background-color: var(--color-button-dark);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 924px) {
+  .section_groups {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
